@@ -106,7 +106,7 @@ The plot above shows the final predicted number of pangolins killed for trade ea
 - *Rates of unreported trade*: A large amount of trade is occurring illegally or not being reported.  Estimates of illegal activity are therefore taken from police seizures of illegally traded material, however these are limited.
 - *Growth rates*: It is difficult to measure the true growth in demand for pangolin products, due to the widespread scale of the problem and the illegality of the trade.
 
-Due to these factors, the data may provide a skewed view of the true trading activity.  Several assumptions have had to be made, adding more uncertainty to the results. 
+Due to these factors the data may provide a skewed view of the true trading activity.  Several assumptions have had to be made, adding more uncertainty to the results. 
 
 ## Future Work
 
