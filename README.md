@@ -21,7 +21,7 @@
 
 #### Aims
 
-The pangolin is a scaly mammal native to parts of Africa and Asia, and is at great risk of extinction due to human trading in pangolin products. The aim of this project is to analyse existing data on recorded trades of pangolin products, identify trends, and use these to predict future trade levels, while taking into account unreported trade and growth in demand.
+The pangolin is a scaly mammal native to parts of Africa and Asia, and is at great risk of extinction due to human trade in pangolin products. The aim of this project is to analyse existing data on recorded trades of pangolin products, identify trends, and use these to predict future trade levels, while taking into account unreported trade and growth in demand.
 
 #### Documents
 
@@ -35,7 +35,7 @@ The pangolin is a scaly mammal native to parts of Africa and Asia, and is at gre
 
 #### Structure
 
-Begin with 'Data Preprocessing.ipynb', being sure to read through 'Appendix A - Country Codes.pdf' and 'Appendix B - Term Classification and Conversion Rates.pdf' for more detailed justifications.  Move then to 'Exploratory Data Analysis.ipynb' for an in-depth analysis of past trends in recorded pangolin trading.  Finally, move to 'Simulation and Forecasting.ipynb' to fit a probability distribution to the data and use Monte Carlo simulation to predict past and future trade levels. 
+Begin with "Data Preprocessing.ipynb", being sure to read through "Appendix A - Country Codes.pdf" and "Appendix B - Term Classification and Conversion Rates.pdf" for more detailed justifications.  Move then to "Exploratory Data Analysis.ipynb" for an in-depth analysis of past trends in recorded pangolin trading.  End with "Simulation and Forecasting.ipynb" to fit a probability distribution to the data and use Monte Carlo simulation to predict past and future trade levels. 
 
 
 ## Installation and Prerequisites
@@ -57,19 +57,17 @@ Clone the repository.  Install the required libraries by running the following l
 
 #### Source of Data
 
-The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) provides a database with all recorded international transactions of wild animal and plant products since 1977.  Our initial dataset `CITES31May.csv` was downloaded from this site on 31 May 2024 and filtered for all trades concerning pangolin related products.
+The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) provides a database with all recorded international transactions of wild animal and plant products since 1977.  Our initial dataset `CITES31May.csv` was downloaded from this site on 31 May 2024 and filtered for all trades concerning pangolin products.
 
 #### Preprocessing
 
-In the file `Data Preprocessing.ipynb` extensive proprocessing of the raw data `CITES31May.csv` is performed.  This includes the removal of extraneous variables and double-counted transactions, addition of indicator variables regarding the origin of the pangolin and purpose of the trade, and conversion of all types of pangolin products to the estimated number of pangolins consumed.  See 'Appendix A - Country Codes.pdf' and 'Appendix B - Term Classification and Conversion Rates.pdf' for full details on conversions.
+In the file "Data Preprocessing.ipynb" extensive proprocessing of the raw data is performed.  This includes the removal of extraneous variables and double-counted transactions; addition of indicator variables regarding the origin of the pangolin and purpose of the trade; and conversion of all types of pangolin products to the estimated number of pangolins consumed.  See "Appendix A - Country Codes.pdf" and "Appendix B - Term Classification and Conversion Rates.pdf" for full details on conversions.
 
 ## Exploratory Data Analysis
 
-'Exploratory Data Analysis.ipynb' analyses the cleaned dataset `CITES.csv`.  Trends are examined according to the origin of the pangolins and the purpose of the trade.  The dataset `total.csv` is produced, containing a summarised version of the trades by year. 
+"Exploratory Data Analysis.ipynb" analyses the cleaned dataset `CITES.csv`.  Trends are examined according to the origin of the pangolins and the purpose of the trade.  The dataset `total.csv` is produced, containing a summarised version of the trades by year. 
 
 <img src="Images/african_vs_asian_line.png" width="500" height="300" style="float: left; margin-right: 10px;" />
-
-<img src="Images/african_vs_asian_bar.png" width="380" style="float: right; margin-right: 10px;" />
 
 <div style="clear: both;"></div>
 
@@ -97,22 +95,22 @@ A log-normal density provides the best fit to the data.  Monte Carlo simulation 
 
 <div style="clear: both;"></div>
 
-The plot above shows the final predicted number of pangolins killed for trade each year. Almost 3 million pangolins are estimated to have been killed for human consumption since 1977, with the majority of trade happening illegally.  
+The plot above shows the total predicted number of pangolins killed for trade each year, both legally and illegally. Almost 3 million pangolins are estimated to have been killed for human consumption since 1977.  
 
 
 ## Limitations
 
-- *Limited dataset*: The CITES data set contains incomplete entries or transactions recorded twice (by exporter and importer).  It also focuses only on international trade, meaning that all trade of pangolin products within a country has been omitted. In addition, some exporters provide intentionally vague reports to sidestep animal protection regulations.
-- *Rates of unreported trade*: A large amount of trade is occurring illegally or not being reported.  Estimates of illegal activity are therefore taken from police seizures of illegally traded material, however these are limited.
+- *Limited dataset*: The CITES dataset contains incomplete entries or transactions recorded twice (by exporter and importer).  It also focuses only on international trade, meaning that all trade of pangolin products within a country has been omitted. In addition, some exporters provide intentionally vague reports to sidestep animal protection regulations.
+- *Rates of unreported trade*: A large amount of trade goes unreported.  Estimates of illegal activity are therefore taken from police seizures of illegally traded material, however these are limited.
 - *Growth rates*: It is difficult to measure the true growth in demand for pangolin products, due to the widespread scale of the problem and the illegality of the trade.
 
-Due to these factors the data may provide a skewed view of the true trading activity.  Several assumptions have had to be made, adding more uncertainty to the results. 
+Due to these factors the data may provide a skewed view of the true trading activity.  Several assumptions have been made, adding more uncertainty to the results. 
 
 ## Future Work
 
-- Laws and regulations, their enforcement, and trends in demand are always changing.  A similar analysis done with future data would need to take these updated assumptions into account.  
+- Regulations, their enforcement, and trends in demand are always changing.  A similar analysis done with future data would need to take these updated assumptions into account.
 - This current analysis could be used to inform policymakers and wildlife protection agencies of the threats facing pangolins. 
-- The future of the pangolin species is greatly at risk, and there is much to be done to protect them.  If you feel at all inspired by their plight, please visit https://donations.zsl.org/pangolin/ or https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Pangolin.aspx to donate towards their conservation. 
+- Pangolins populations are greatly at risk, and there is much to be done to protect them.  If you feel at all inspired by their plight, please visit https://donations.zsl.org/pangolin/ or https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Pangolin.aspx to donate towards their conservation. 
 
 ## References
 
