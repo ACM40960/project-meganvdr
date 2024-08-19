@@ -110,7 +110,7 @@ Due to these factors the data may provide a skewed view of the true trading acti
 
 - Regulations, their enforcement, and trends in demand are always changing.  A similar analysis done with future data would need to take these updated assumptions into account.
 - This current analysis could be used to inform policymakers and wildlife protection agencies of the threats facing pangolins. 
-- Pangolins populations are greatly at risk, and there is much to be done to protect them.  If you feel at all inspired by their plight, please visit https://donations.zsl.org/pangolin/ or https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Pangolin.aspx to donate towards their conservation. 
+- Pangolin populations are greatly at risk and there is much to be done to protect them.  If you feel at all inspired by their plight, please visit https://donations.zsl.org/pangolin/ or https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Pangolin.aspx to donate towards their conservation. 
 
 ## References
 
